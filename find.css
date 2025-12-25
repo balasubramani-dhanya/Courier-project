@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+nav{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
+.logo{
+    align-items: center;
+    display: flex;
+    margin-left: 60px;
+}
+.logo p{
+    font-size: 22px;
+    font-family: Eagle Lake!important;
+    color: #f93319; 
+}
+.logo a{
+    text-decoration: none;
+}
+.logo img{
+    height: 70px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+    gap: 20px; 
+}
+nav ul li{
+    list-style: none;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color:#11111D;
+    font-size: 18px;
+}
+nav ul li a.active {
+    color: #f95c19;
+    font-weight: 600;
+}
+nav ul li a:hover{
+    color:#f95c19;
+    font-size: 19px;
+}
+nav ul li a button{
+    height: 40px;
+    width: 120px;
+    background-color: #f95c19;
+    color: #fffefe;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+nav ul li a button:hover{
+    transform: scale(1.1);
+}
+.alpha{
+    height: 80vh;
+}
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.ima{
+    text-align: center;
+}
+.ima h5{
+    margin-top: 10px;
+}
+.ima h3{
+    margin-top: 10px;
+}
+.ima p{
+    margin-top: 5px;
+}
+#form1{
+    margin-top: 50px;
+}
+#form1 input[type="text"]{
+    width: 300px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;    
+}
+#form1 input[type="email"]{
+    width: 300px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+#form1 textarea{
+    width: 300px;
+    height: 100px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+#form1 button{
+    width: 300px;
+    height: 35px;
+    font-size: 1.1rem;
+    background-color: #f95c19;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+}
+.beta h1{
+    text-align: center;
+}
+.findus{
+    margin: 30px 100px 30px 100px;
+    border-radius: 10px;
+    justify-content: space-evenly; 
+    background-color: #fff;
+}
+.contact h3{
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+}
+.contact p{
+    font-size: 1.3rem;
+    color: #585757;
+    padding-bottom: 10px;
+}
+
+
+/* ----footer section---- */
+.footer .part01{
+    background-color: #232233;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 60px;
+}
+.footer .part01 .txt h2{
+    color: #fff;
+    font-size: 2.5rem;
+}
+.footer .part01 .txt p{
+    width: 400px;
+    color: #bbb;
+    padding-top: 20px
+}
+.footer .part01 label{
+    color: #f95c19;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+#emailid{
+    width:400px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin-top: 10px;
+    border: none;
+    color: #999;
+    background:none;
+}
+#form2 button{
+    height: 40px;
+    width: 110px;
+    border-radius: 6px;
+    font-size: 1.09rem;
+    background-color: #f95c19;
+    color: #fff;
+    border: none;
+}
+.footer .part02{
+    background-color: #2e2d40;
+    height: 40vh;
+}
+.part02{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 60px;
+}
+.footer-box h3{
+    color:#fff;
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+}
+.footer-box p{
+    width: 300px;
+    color: #aaa;
+}
+.footer-box ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footer-box ul li a{
+    text-decoration: none;
+    color: #aaa;
+}
+/*-------media query for tab screen-------*/
+@media(min-width:740px) and (max-width:1024px){
+    nav{
+    display: flex;
+    flex-wrap: wrap;
+    height: 130px;
+}
+.logo{
+    margin-left: 20px;
+}
+nav ul{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.alpha{
+    height: auto;
+}
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+#form1 input[type="text"]{
+    width: 300px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+}
+#form1 input[type="email"]{
+    width: 300px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+#form1 textarea{
+    width: 300px;
+    height: 100px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+#form1 button{
+    width: 300px;
+    height: 35px;
+    font-size: 1.1rem;
+    background-color: #f95c19;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+}
+.beta h1{
+    text-align: center;
+    padding: 30px;
+}
+.findus{
+    margin: 10px 100px 30px 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+} 
+.location iframe{
+    width: 500px;
+    height: 400px;
+}
+.contact h3{
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+.contact p{
+    font-size: 1.3rem;
+    color: #585757;
+    padding-bottom: 10px;
+}
+.footer .part01{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 60px;
+}
+.footer .part01 .txt h2{
+    font-size: 2rem;
+}
+.footer .part01 .txt p{
+    width: 400px;
+    font-size: 0.9rem;
+    padding-top: 15px
+}
+.footer .part01 form{
+    margin-top: 20px;
+}
+.footer .part01 label{
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+input[type='email']{
+    width:300px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+#form2 button{
+    height: 30px;
+    width: 100px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background-color: #f95c19;
+    color: #fff;
+}
+.footer .part02{
+    background-color: #2e2d40;
+    height: auto;
+}
+.part02{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px 50px;
+}
+.footer-box h3{
+    color:#fff;
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+}
+.footer-box p{
+    width: 200px;
+    color: #aaa;
+}
+}
+
+/* ------media query for mobile screen------ */
+@media(max-width:739px){
+    nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    position: static;
+}
+.logo{
+    margin: 0;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+}
+.alpha{
+    height: auto;
+}
+section{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.ima{
+    text-align: center;
+}
+.ima h5{
+    margin-top: 10px;
+}
+.ima h3{
+    margin-top: 10px;
+}
+.ima p{
+    margin-top: 5px;
+}
+#form1{
+    margin-top: 20px;
+}
+#form1 input[type="text"]{
+    width: 300px;
+    height: 25px;
+    padding-left: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;    
+}
+#form1 input[type="email"]{
+    width: 300px;
+    height: 25px;
+    padding-left: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+#form1 textarea{
+    width: 300px;
+    height: 100px;
+    padding-left: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+#form1 button{
+    width: 300px;
+    height: 35px;
+    background-color: #f95c19;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+}
+.beta h1{
+    text-align: center;
+    padding: 20px;
+}
+.findus{
+    margin: 30px 0px 30px 0px;
+    border-radius: 10px;
+    justify-content: space-evenly; 
+}
+.location iframe{
+    width: auto;
+    height: 300px;
+}
+.contact h3{
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+}
+.contact p{
+    font-size: 1rem;
+    color: #585757;
+    padding-bottom: 10px;
+}
+
+.footer .part01{
+    background-color: #232233;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+}
+.footer .part01 .txt h2{
+    font-size: 1.5rem;
+}
+.footer .part01 .txt p{
+    width: 300px;
+}
+.footer .part01 form{
+    padding-top: 10px;
+    padding-left: 25px;
+}
+.footer .part01 label{
+    color: #f95c19;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+#form2 input[type='email']{
+    width:280px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+#form2 button{
+    height: 30px;
+    width: 110px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background-color: #f95c19;
+    color: #fff;
+    margin-top: 5px;
+}
+.footer .part02{
+    background-color: #2e2d40;
+    height: auto;
+}
+.part02{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px 60px;
+}
+.footer-box{
+    padding-top: 10px;
+}
+.footer-box h3{
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+.footer-box p{
+    width: 200px;
+}
+.footer-box ul li{
+   margin-bottom: 5px;
+}
+}
